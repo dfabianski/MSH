@@ -21,14 +21,14 @@
     --bg: #0d2239;
     --ink: #efddc4;
     --ground: #60a9e6;
-    --card: #133252;
+    --card: #efddc4; /* Hier auf den Sandton angepasst, damit es zum Badge passt */
   }
 }
 :root[data-theme="dark"] {
   --bg: #0d2239;
   --ink: #efddc4;
   --ground: #60a9e6;
-  --card: #133252;
+  --card: #efddc4; /* Hier ebenfalls auf den Sandton angepasst */
 }
 * { box-sizing: border-box; }
 html, body {
@@ -62,7 +62,7 @@ main {
   border-radius: 18px;
   padding: 12px 20px;
   margin-bottom: 8px;
-  box-shadow: 0 4px 12px rgba(19, 50, 82, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .logo img {
   display: block;
@@ -169,7 +169,7 @@ footer b { color: var(--accent); }
 <body>
 <main>
   <div class="logo">
-    <img alt="MSH – Media. Social. Hub." src="MSH PNG positiv.png">
+    <img alt="MSH – Media. Social. Hub." src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAADoCAYAAAB/9VU9AACSw0lEQVR42uydd3hcxdXG33Pm3t2VZFlWcZE7HQwusuglBhISQrElGrvKYGKbKCVXW7Mh110023K1K0L4WwFauo17W5X3d33e98f02f928z44y2Q5t2d/v063c/v2133T3j3O7q7t02J1M9B4u4zM+t+b86c3vuvv293297a7r9p3h9wM6TqGAAAAABJRU5ErkJggg==">
   </div>
   <span class="badge">Baustelle · Neue Website</span>
   <h1>Hier wird <span>gebaut.</span></h1>
@@ -201,7 +201,7 @@ footer b { color: var(--accent); }
       <g transform="translate(130 270)"><use href="#man"/>
         <g transform="translate(0 -78)"><g class="hit"><rect x="-4" y="0" width="8" height="34" rx="4" fill="#60a9e6" transform="rotate(-90) rotate(90)"/>
           <rect x="-4" y="0" width="8" height="30" rx="4" fill="#e3b48c" transform="translate(0 0)"/><rect x="-14" y="26" width="28" height="14" rx="3" fill="#cecdcd"/></g></g></g>
-      <rect x="175" y="244" width="44" height="26" rx="3" ref="#efddc4" stroke="#133252" stroke-width="3"/>
+      <rect x="175" y="244" width="44" height="26" rx="3" fill="#efddc4" stroke="#133252" stroke-width="3"/>
       <g fill="#60a9e6"><circle class="spark" cx="190" cy="236" r="3"/><circle class="spark" cx="205" cy="228" r="2.5" style="animation-delay:.2s"/><circle class="spark" cx="214" cy="238" r="2" style="animation-delay:.1s"/></g>
       <!-- Arbeiter 2: Maler auf Gerüst -->
       <g transform="translate(460 184)"><use href="#man"/>
