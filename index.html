@@ -6,7 +6,7 @@
   <title>MSH · MEDIA. SOCIAL. HUB. | Strategische Kommunikation für Speditionen &amp; Logistik</title>
   <meta name="description" content="Strategische Kommunikation für Speditionen und Logistikunternehmen, die Wirkung zeigt. Fuhrpark, Team und Kompetenz im Markt unübersehbar machen.">
 
-  <!-- Google Fonts: Montserrat (fett & normal) & Space Grotesk -->
+  <!-- Google Fonts: Montserrat & Space Grotesk -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -23,11 +23,9 @@
               navySoft: '#1e4873',
               azure: '#60a9e6',
               azureLight: '#eaf4fd',
-              azureHover: '#4b98dc',
               sand: '#efddc4',
               sandLight: '#fbf7f1',
               grey: '#cecdcd',
-              greyLight: '#eef2f5',
               bgLight: '#f4f7fa'
             }
           },
@@ -62,24 +60,8 @@
       box-shadow: 0 4px 18px rgba(19, 50, 82, 0.04);
     }
 
-    /* Subtiles Raster für die hellen Sektionen */
-    .bg-subtle-grid {
-      background-image: radial-gradient(rgba(96, 169, 230, 0.2) 1px, transparent 1px);
-      background-size: 28px 28px;
-    }
-
-    ::-webkit-scrollbar {
-      width: 7px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #f4f7fa;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #cecdcd;
-      border-radius: 2px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #60a9e6;
+    .hero-shadow {
+      text-shadow: 0 2px 14px rgba(6, 16, 28, 0.7);
     }
   </style>
 </head>
@@ -88,24 +70,24 @@
   <!-- =================================================================
        NAVIGATION
   ================================================================== -->
-  <header class="fixed top-0 left-0 w-full z-50 px-6 lg:px-16 py-4 bg-white/95 backdrop-blur-md border-b border-msh-grey">
+  <header class="fixed top-0 left-0 w-full z-50 px-6 lg:px-16 py-4 bg-[#0a1828]/85 backdrop-blur-md border-b border-white/10">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       
       <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3">
-        <div class="flex items-baseline font-black text-2xl lg:text-3xl tracking-tighter text-msh-navy">
+        <div class="flex items-baseline font-black text-2xl lg:text-3xl tracking-tighter text-white">
           MSH
           <span class="inline-block w-3.5 h-3.5 rounded-full border-2 border-msh-azure ml-1 relative flex items-center justify-center">
             <span class="w-1.5 h-1.5 rounded-full bg-msh-azure"></span>
           </span>
         </div>
-        <div class="hidden sm:block text-[11px] tracking-[0.25em] uppercase text-msh-navySoft font-semibold border-l border-msh-grey pl-3">
+        <div class="hidden sm:block text-[11px] tracking-[0.25em] uppercase text-msh-sand font-medium border-l border-white/20 pl-3">
           Media. Social. Hub.
         </div>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-msh-navySoft">
+      <nav class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-msh-grey">
         <a href="#ansatz" class="hover:text-msh-azure transition-colors">Ansatz</a>
         <a href="#leistungen" class="hover:text-msh-azure transition-colors">Leistungen</a>
         <a href="#ueber-uns" class="hover:text-msh-azure transition-colors">Über uns</a>
@@ -113,7 +95,7 @@
 
       <!-- CTA Action -->
       <div class="flex items-center gap-4">
-        <a href="#kontakt" class="px-6 py-2.5 bg-msh-navy text-white font-bold text-xs uppercase tracking-widest hover:bg-msh-azure transition-colors">
+        <a href="#kontakt" class="px-6 py-2.5 bg-msh-azure text-msh-navy font-bold text-xs uppercase tracking-widest hover:bg-white transition-colors">
           <span class="flex items-center gap-2">
             Erstgespräch
             <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
@@ -125,76 +107,76 @@
   </header>
 
   <!-- =================================================================
-       HERO STAGE MIT BILDHINTERGRUND
+       HERO STAGE MIT BILDHINTERGRUND & 3-ZEILIG VERBLOCKTER HEADLINE
   ================================================================== -->
   <section class="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-6 lg:px-16 pt-36 pb-20 bg-cover bg-center bg-no-repeat" style="background-image: url('Design ohne Titel (2).jpg');">
     
-    <!-- Helles Overlay für optimale Lesbarkeit und freundlichen Look -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white/92 via-white/85 to-[#f4f7fa] pointer-events-none"></div>
+    <!-- Sanfter Kontrastfilter für saubere Lesbarkeit des weißen Textes -->
+    <div class="absolute inset-0 bg-[#06101c]/45 backdrop-brightness-[0.85] pointer-events-none"></div>
 
-    <div class="relative z-10 max-w-5xl mx-auto w-full flex flex-col items-center">
+    <div class="relative z-10 max-w-6xl mx-auto w-full flex flex-col items-center">
 
-      <div class="inline-block mb-6 px-4 py-1.5 bg-white/90 border border-msh-azure/40 shadow-sm rounded-full">
-        <span class="text-xs font-mono font-bold uppercase tracking-wider text-msh-navy">MSH · Media Social Hub</span>
+      <!-- Badge -->
+      <div class="inline-block mb-6 px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-sm">
+        <span class="text-xs font-mono font-bold uppercase tracking-wider text-msh-sand">MSH · Media Social Hub</span>
       </div>
 
-      <!-- Main Headline -->
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.12] text-msh-navy mb-8 max-w-5xl">
-        Strategische Kommunikation für Speditionen und Logistikunternehmen,<br class="hidden sm:inline">
-        <span class="text-msh-azure">
-          die Wirkung zeigt.
-        </span>
+      <!-- Main Headline: Exakt 3 Zeilen sauber verblockt -->
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-black uppercase tracking-tight leading-snug text-white mb-6 max-w-5xl hero-shadow">
+        <span class="block">Strategische Kommunikation für</span>
+        <span class="block">Speditionen und Logistikunternehmen,</span>
+        <span class="block text-msh-azure">die Wirkung zeigt.</span>
       </h1>
 
-      <!-- Subheadline -->
-      <p class="text-base sm:text-lg lg:text-xl font-normal text-msh-navySoft max-w-4xl leading-relaxed mb-12">
+      <!-- Subheadline in Sand/Weiß für idealen Kontrast -->
+      <p class="text-sm sm:text-base lg:text-lg font-normal text-msh-sand max-w-3xl leading-relaxed mb-10 hero-shadow">
         Speditionen und Logistikunternehmen haben mit vielen Herausforderungen gleichzeitig zu kämpfen:
-        <strong class="text-msh-navy font-bold">Fahrermangel</strong>, wachsender wirtschaftlicher Druck und eine Branche, die sich durch <strong class="text-msh-navy font-bold">Digitalisierung und KI</strong> rasant verändert – Wir machen Ihren Fuhrpark, Ihr Team und Ihre Kompetenz <span class="whitespace-nowrap text-msh-navy font-bold">im Markt unübersehbar.</span>
+        <strong class="text-white font-bold">Fahrermangel</strong>, wachsender wirtschaftlicher Druck und eine Branche, die sich durch <strong class="text-white font-bold">Digitalisierung und KI</strong> rasant verändert – Wir machen Ihren Fuhrpark, Ihr Team und Ihre Kompetenz <span class="whitespace-nowrap text-white font-bold">im Markt unübersehbar.</span>
       </p>
 
       <!-- Primary Action Row -->
-      <div class="flex flex-wrap items-center justify-center gap-5 mb-20">
-        <a href="#kontakt" class="px-8 py-4 bg-msh-navy text-white font-bold text-xs uppercase tracking-widest hover:bg-msh-azure transition-colors flex items-center gap-2 shadow-md">
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
+        <a href="#kontakt" class="px-8 py-3.5 bg-msh-azure text-msh-navy font-bold text-xs uppercase tracking-widest hover:bg-white transition-colors flex items-center gap-2 shadow-lg">
           <span>Potenzialanalyse vereinbaren</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
-        <a href="#leistungen" class="px-8 py-4 bg-white/95 border border-msh-grey text-msh-navy font-bold text-xs uppercase tracking-wider hover:border-msh-azure transition-colors shadow-sm">
+        <a href="#leistungen" class="px-8 py-3.5 bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold text-xs uppercase tracking-wider hover:bg-white hover:text-msh-navy transition-colors">
           Leistungsspektrum erkunden
         </a>
       </div>
 
       <!-- KPI Matrix Strip -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pt-10 border-t border-msh-navy/15 w-full max-w-5xl mx-auto text-center">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 pt-8 border-t border-white/20 w-full max-w-5xl mx-auto text-center">
         <!-- 1. 100% -->
-        <div class="flex flex-col items-center p-4 bg-white/90 backdrop-blur-sm border border-msh-grey/80 rounded shadow-sm">
-          <div class="h-12 flex items-center justify-center">
-            <span class="text-2xl sm:text-3xl lg:text-4xl font-black text-msh-navy tracking-tight">100%</span>
+        <div class="flex flex-col items-center p-4 bg-white/95 backdrop-blur-sm border border-msh-grey rounded shadow-sm">
+          <div class="h-10 flex items-center justify-center">
+            <span class="text-2xl sm:text-3xl font-black text-msh-navy tracking-tight">100%</span>
           </div>
-          <div class="text-xs font-mono text-msh-azure font-bold tracking-wider uppercase mt-1">Branchenfokus Transport</div>
+          <div class="text-[11px] font-mono text-msh-navySoft font-bold tracking-wider uppercase mt-1">Branchenfokus Transport</div>
         </div>
 
         <!-- 2. Wirkung -->
-        <div class="flex flex-col items-center p-4 bg-white/90 backdrop-blur-sm border border-msh-grey/80 rounded shadow-sm">
-          <div class="h-12 flex items-center justify-center">
-            <span class="text-2xl sm:text-3xl lg:text-4xl font-black text-msh-navy tracking-tight">Wirkung</span>
+        <div class="flex flex-col items-center p-4 bg-white/95 backdrop-blur-sm border border-msh-grey rounded shadow-sm">
+          <div class="h-10 flex items-center justify-center">
+            <span class="text-2xl sm:text-3xl font-black text-msh-navy tracking-tight">Wirkung</span>
           </div>
-          <div class="text-xs font-mono text-msh-azure font-bold tracking-wider uppercase mt-1">Echte Resonanz</div>
+          <div class="text-[11px] font-mono text-msh-navySoft font-bold tracking-wider uppercase mt-1">Echte Resonanz</div>
         </div>
 
         <!-- 3. Messbare Ergebnisse -->
-        <div class="flex flex-col items-center p-4 bg-white/90 backdrop-blur-sm border border-msh-grey/80 rounded shadow-sm">
-          <div class="h-12 flex items-center justify-center">
-            <span class="text-xl sm:text-2xl lg:text-3xl font-black text-msh-navy tracking-tight leading-tight">Messbare<br>Ergebnisse</span>
+        <div class="flex flex-col items-center p-4 bg-white/95 backdrop-blur-sm border border-msh-grey rounded shadow-sm">
+          <div class="h-10 flex items-center justify-center">
+            <span class="text-lg sm:text-xl font-black text-msh-navy tracking-tight leading-tight">Messbare<br>Ergebnisse</span>
           </div>
-          <div class="text-xs font-mono text-msh-azure font-bold tracking-wider uppercase mt-1">Planbarer Zuwachs</div>
+          <div class="text-[11px] font-mono text-msh-navySoft font-bold tracking-wider uppercase mt-1">Planbarer Zuwachs</div>
         </div>
 
         <!-- 4. Sichtbarkeit -->
-        <div class="flex flex-col items-center p-4 bg-white/90 backdrop-blur-sm border border-msh-grey/80 rounded shadow-sm">
-          <div class="h-12 flex items-center justify-center">
-            <span class="text-2xl sm:text-3xl lg:text-4xl font-black text-msh-navy tracking-tight">Sichtbarkeit</span>
+        <div class="flex flex-col items-center p-4 bg-white/95 backdrop-blur-sm border border-msh-grey rounded shadow-sm">
+          <div class="h-10 flex items-center justify-center">
+            <span class="text-2xl sm:text-3xl font-black text-msh-navy tracking-tight">Sichtbarkeit</span>
           </div>
-          <div class="text-xs font-mono text-msh-azure font-bold tracking-wider uppercase mt-1">Überall präsent</div>
+          <div class="text-[11px] font-mono text-msh-navySoft font-bold tracking-wider uppercase mt-1">Überall präsent</div>
         </div>
       </div>
 
@@ -216,59 +198,27 @@
         MSH kennt die Branche aus langjähriger eigener Erfahrung und entwickelt Strategien und Content, der bei Fahrern, Kunden und Bewerbern auch ankommt.
       </p>
 
-      <!-- Minimalistische Liste -->
       <div class="w-full max-w-4xl text-left border-t border-b border-msh-grey divide-y divide-msh-grey">
-
-        <!-- Positionierung -->
         <div class="py-5 sm:py-6 flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-6 px-3 sm:px-4 hover:bg-msh-bgLight">
-          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">
-            Präzise Positionierung –
-          </h3>
-          <span class="text-sm font-normal text-msh-navySoft md:text-right">
-            durch Branchen- und Zielgruppenanalyse
-          </span>
+          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">Präzise Positionierung –</h3>
+          <span class="text-sm font-normal text-msh-navySoft md:text-right">durch Branchen- und Zielgruppenanalyse</span>
         </div>
-
-        <!-- Authentischer Content -->
         <div class="py-5 sm:py-6 flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-6 px-3 sm:px-4 hover:bg-msh-bgLight">
-          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">
-            Authentischer Content statt inszenierter Werbung:
-          </h3>
-          <span class="text-sm font-normal text-msh-navySoft md:text-right shrink-0">
-            mehr Reichweite und Bindung
-          </span>
+          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">Authentischer Content statt inszenierter Werbung:</h3>
+          <span class="text-sm font-normal text-msh-navySoft md:text-right shrink-0">mehr Reichweite und Bindung</span>
         </div>
-
-        <!-- KI-gestützte Content-Produktion -->
         <div class="py-5 sm:py-6 flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-6 px-3 sm:px-4 hover:bg-msh-bgLight">
-          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">
-            KI-gestützte Content-Produktion:
-          </h3>
-          <span class="text-sm font-normal text-msh-navySoft md:text-right shrink-0">
-            schneller produziert, besser auffindbar
-          </span>
+          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">KI-gestützte Content-Produktion:</h3>
+          <span class="text-sm font-normal text-msh-navySoft md:text-right shrink-0">schneller produziert, besser auffindbar</span>
         </div>
-
-        <!-- Recruiting & Employer Branding -->
         <div class="py-5 sm:py-6 flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-6 px-3 sm:px-4 hover:bg-msh-bgLight">
-          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">
-            Recruiting &amp; Employer Branding
-          </h3>
-          <span class="text-sm font-normal text-msh-navySoft md:text-right">
-            gegen den Fahrer- und Fachkräftemangel
-          </span>
+          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">Recruiting &amp; Employer Branding</h3>
+          <span class="text-sm font-normal text-msh-navySoft md:text-right">gegen den Fahrer- und Fachkräftemangel</span>
         </div>
-
-        <!-- Social Media, Video und PR -->
         <div class="py-5 sm:py-6 flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-6 px-3 sm:px-4 hover:bg-msh-bgLight">
-          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">
-            Social Media, Video und PR,
-          </h3>
-          <span class="text-sm font-normal text-msh-navySoft md:text-right">
-            die Ihr Unternehmen anfassbar und sichtbar machen
-          </span>
+          <h3 class="text-base sm:text-lg font-bold uppercase tracking-tight text-msh-navy">Social Media, Video und PR,</h3>
+          <span class="text-sm font-normal text-msh-navySoft md:text-right">die Ihr Unternehmen anfassbar und sichtbar machen</span>
         </div>
-
       </div>
 
     </div>
@@ -289,9 +239,7 @@
         </p>
       </div>
 
-      <!-- Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-
         <!-- Social Media -->
         <div class="msh-card p-8 flex flex-col justify-between border-t-4 border-t-msh-azure">
           <div>
@@ -299,9 +247,7 @@
               <span class="text-xs font-mono text-msh-azure font-bold tracking-wider">KANÄLE</span>
               <span class="w-2 h-2 rounded-full bg-msh-azure"></span>
             </div>
-            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">
-              Social Media
-            </h3>
+            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">Social Media</h3>
             <p class="text-sm font-normal text-msh-navySoft leading-relaxed">
               Wir betreuen Ihre Kanäle (LinkedIn, Instagram, TikTok, YouTube, Facebook) und entwickeln Strategien für mehr Reichweite bei Kunden und Bewerbern.
             </p>
@@ -315,9 +261,7 @@
               <span class="text-xs font-mono text-msh-azure font-bold tracking-wider">VISUELL</span>
               <span class="w-2 h-2 rounded-full bg-msh-azure"></span>
             </div>
-            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">
-              Content-Produktion &amp; Video
-            </h3>
+            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">Content-Produktion &amp; Video</h3>
             <p class="text-sm font-normal text-msh-navySoft leading-relaxed">
               Foto- und Videocontent, der Ihren Fuhrpark, Ihr Team und Ihren Alltag zeigt, statt ihn zu inszenieren.
             </p>
@@ -331,9 +275,7 @@
               <span class="text-xs font-mono text-msh-azure font-bold tracking-wider">INNOVATION</span>
               <span class="w-2 h-2 rounded-full bg-msh-azure"></span>
             </div>
-            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">
-              KI-gestützte Contentarbeit
-            </h3>
+            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">KI-gestützte Contentarbeit</h3>
             <p class="text-sm font-normal text-msh-navySoft leading-relaxed">
               Schnellere Produktion und bessere Auffindbarkeit, auch in KI-basierten Suchsystemen.
             </p>
@@ -347,9 +289,7 @@
               <span class="text-xs font-mono text-msh-azure font-bold tracking-wider">RECRUITING</span>
               <span class="w-2 h-2 rounded-full bg-msh-azure"></span>
             </div>
-            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">
-              Recruiting &amp; Employer Branding
-            </h3>
+            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">Recruiting &amp; Employer Branding</h3>
             <p class="text-sm font-normal text-msh-navySoft leading-relaxed max-w-2xl">
               Kampagnen, die gegen Fahrermangel wirken und die passenden Leute für Ihr Unternehmen gewinnen.
             </p>
@@ -363,15 +303,12 @@
               <span class="text-xs font-mono text-msh-azure font-bold tracking-wider">PR &amp; MARKE</span>
               <span class="w-2 h-2 rounded-full bg-msh-azure"></span>
             </div>
-            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">
-              PR und Pressearbeit
-            </h3>
+            <h3 class="text-lg font-bold uppercase tracking-tight text-msh-navy mb-3">PR und Pressearbeit</h3>
             <p class="text-sm font-normal text-msh-navySoft leading-relaxed">
               Kommunikationskonzepte und Kontakte zur Fachpresse, damit Sie auch außerhalb der eigenen Kanäle wahrgenommen werden.
             </p>
           </div>
         </div>
-
       </div>
 
     </div>
@@ -393,7 +330,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
         <!-- Oliver Haas -->
         <div class="msh-card p-8 lg:p-10 border-t-4 border-t-msh-azure flex flex-col justify-between">
           <div>
@@ -425,7 +361,6 @@
             <span>m.smeets@media-msh.com</span>
           </a>
         </div>
-
       </div>
 
     </div>
@@ -446,7 +381,6 @@
         </p>
       </div>
 
-      <!-- Formular -->
       <div class="max-w-2xl mx-auto w-full">
         <div class="msh-card p-8 lg:p-10 border border-msh-grey">
           <h3 class="text-xl font-bold uppercase text-msh-navy mb-6">
@@ -454,7 +388,6 @@
           </h3>
 
           <form action="mailto:o.haas@media-msh.com" method="post" enctype="text/plain" class="space-y-4">
-            
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-mono uppercase font-bold text-msh-navy mb-1">Ihr Name</label>
@@ -483,12 +416,11 @@
             <div class="text-[11px] text-center text-msh-navySoft pt-2">
               Ihre Daten werden vertraulich behandelt. Keine Werbeanrufe, nur strategischer Austausch.
             </div>
-
           </form>
         </div>
       </div>
 
-      <!-- Footer Bottom Note (OHNE Referenzen) -->
+      <!-- Footer ohne Referenzen -->
       <div class="mt-20 pt-8 border-t border-msh-grey flex flex-col sm:flex-row justify-between items-center text-xs font-mono text-msh-navySoft gap-6">
         <div>© 2026 MSH – Media Social Hub GmbH. Neuss, Deutschland.</div>
 
