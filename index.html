@@ -198,12 +198,13 @@
   <section id="leistungen" class="relative z-10 px-6 lg:px-16 py-28 border-t border-msh-grey bg-[#f4f7fa]">
     <div class="max-w-7xl mx-auto">
       
-      <div class="max-w-4xl text-left mb-16">
+      <div class="text-left mb-16">
         <span class="text-xs font-sans font-bold uppercase tracking-widest text-msh-azure mb-3 block">Leistungen</span>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-bold uppercase tracking-tight text-msh-navy leading-snug mb-4">
-          Unsere Expertise für Speditionen,<br>Logistik- und Transportunternehmen
+          <span class="block xl:whitespace-nowrap">Unsere Expertise für Speditionen,</span>
+          <span class="block xl:whitespace-nowrap">Logistik- und Transportunternehmen</span>
         </h2>
-        <p class="text-base font-normal text-msh-navy/80 max-w-2xl leading-relaxed">
+        <p class="text-base font-normal text-msh-navy/80 leading-relaxed">
           Wir bieten ein fokussiertes Leistungsspektrum für die Herausforderungen der Branche:
         </p>
       </div>
@@ -421,66 +422,88 @@
   </section>
 
   <!-- =================================================================
-       SECTION: KONTAKT (HELLBLAU MIT ZWEISPALTIGEM LAYOUT)
+       SECTION: KONTAKT (HELL MIT ZWEISPALTIGEM LAYOUT)
   ================================================================== -->
-  <section id="kontakt" class="relative z-10 px-6 lg:px-16 py-28 bg-msh-azure">
+  <section id="kontakt" class="relative z-10 px-6 lg:px-16 py-28 border-t border-msh-grey bg-[#f4f7fa]">
     <div class="max-w-7xl mx-auto">
       
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        
-        <!-- Linke Spalte: Große Überschrift -->
-        <div class="lg:col-span-5 text-left">
-          <h2 class="text-3xl sm:text-4xl lg:text-4xl xl:text-[42px] font-bold uppercase text-msh-navy leading-snug break-words">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+        <!-- Linke Spalte: Überschrift + direkte Kontaktwege -->
+        <div class="lg:col-span-5 text-left lg:pt-4">
+          <span class="block w-16 h-1 bg-msh-azure mb-6"></span>
+          <h2 class="text-xl sm:text-2xl xl:text-[28px] font-bold uppercase tracking-tight text-msh-navy leading-snug mb-10">
             Sprechen wir über die Positionierung, die Ihre Spedition oder Ihr Logistik&shy;unternehmen sichtbar macht.
           </h2>
+
+          <div class="border-l-4 border-l-msh-azure pl-6">
+            <p class="text-base font-bold text-msh-navy mb-2">MSH – Media Social Hub GmbH</p>
+            <p class="text-sm sm:text-base text-msh-navy/80 leading-relaxed">Rampenstraße 2<br>41472 Neuss</p>
+            <p class="text-sm sm:text-base text-msh-navy/80 mt-4">
+              Web: <a href="https://media-msh.com" target="_blank" rel="noopener" class="font-bold text-msh-azure hover:text-msh-navy transition-colors">media-msh.com</a>
+            </p>
+
+            <div class="mt-8 space-y-3">
+              <a href="mailto:o.haas@media-msh.com" class="group flex items-center gap-3 text-sm sm:text-base font-bold text-msh-navy">
+                <i data-lucide="mail" class="w-5 h-5 text-msh-azure shrink-0"></i>
+                <span class="group-hover:text-msh-azure transition-colors break-all">Oliver Haas: o.haas@media-msh.com</span>
+              </a>
+              <a href="mailto:m.smeets@media-msh.com" class="group flex items-center gap-3 text-sm sm:text-base font-bold text-msh-navy">
+                <i data-lucide="mail" class="w-5 h-5 text-msh-azure shrink-0"></i>
+                <span class="group-hover:text-msh-azure transition-colors break-all">Mona Smeets: m.smeets@media-msh.com</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         <!-- Rechte Spalte: Formular -->
         <div class="lg:col-span-7 w-full">
-          <div class="msh-card p-8 lg:p-10 bg-white shadow-xl">
-            <form action="mailto:o.haas@media-msh.com" method="post" enctype="text/plain" class="space-y-4">
-              <div>
-                <label class="block text-xs font-sans uppercase font-bold text-msh-navy mb-1">Name</label>
-                <input type="text" name="Name" required placeholder="Vorname Nachname" class="w-full bg-white border border-msh-grey px-4 py-3 text-sm text-msh-navy focus:outline-none focus:border-msh-azure">
-              </div>
+          <div class="bg-white border border-msh-grey border-t-4 border-t-msh-azure shadow-xl shadow-msh-navy/5 p-6 sm:p-10">
+        <form action="mailto:o.haas@media-msh.com" method="post" enctype="text/plain" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+          <div>
+            <label class="block text-xs font-sans uppercase font-bold tracking-wider text-msh-navy mb-2">Name</label>
+            <input type="text" name="Name" required placeholder="Vorname Nachname" class="w-full bg-[#f4f7fa] border border-transparent border-b-msh-grey px-4 py-3.5 text-sm text-msh-navy focus:outline-none focus:bg-white focus:border-msh-azure transition-colors">
+          </div>
 
-              <div>
-                <label class="block text-xs font-sans uppercase font-bold text-msh-navy mb-1">Unternehmen</label>
-                <input type="text" name="Unternehmen" required placeholder="z.B. Logistik Gruppe GmbH" class="w-full bg-white border border-msh-grey px-4 py-3 text-sm text-msh-navy focus:outline-none focus:border-msh-azure">
-              </div>
+          <div>
+            <label class="block text-xs font-sans uppercase font-bold tracking-wider text-msh-navy mb-2">Unternehmen</label>
+            <input type="text" name="Unternehmen" required placeholder="z.B. Logistik Gruppe GmbH" class="w-full bg-[#f4f7fa] border border-transparent border-b-msh-grey px-4 py-3.5 text-sm text-msh-navy focus:outline-none focus:bg-white focus:border-msh-azure transition-colors">
+          </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-sans uppercase font-bold text-msh-navy mb-1">E-Mail</label>
-                  <input type="email" name="Email" required placeholder="name@spedition.de" class="w-full bg-white border border-msh-grey px-4 py-3 text-sm text-msh-navy focus:outline-none focus:border-msh-azure">
-                </div>
-                <div>
-                  <label class="block text-xs font-sans uppercase font-bold text-msh-navy mb-1">Telefonnummer</label>
-                  <input type="tel" name="Telefon" placeholder="+49 (0) ..." class="w-full bg-white border border-msh-grey px-4 py-3 text-sm text-msh-navy focus:outline-none focus:border-msh-azure">
-                </div>
-              </div>
+          <div>
+            <label class="block text-xs font-sans uppercase font-bold tracking-wider text-msh-navy mb-2">E-Mail</label>
+            <input type="email" name="Email" required placeholder="name@spedition.de" class="w-full bg-[#f4f7fa] border border-transparent border-b-msh-grey px-4 py-3.5 text-sm text-msh-navy focus:outline-none focus:bg-white focus:border-msh-azure transition-colors">
+          </div>
 
-              <div>
-                <label class="block text-xs font-sans uppercase font-bold text-msh-navy mb-1">Nachricht</label>
-                <textarea name="Nachricht" rows="4" class="w-full bg-white border border-msh-grey px-4 py-3 text-sm text-msh-navy focus:outline-none focus:border-msh-azure" placeholder="Wir möchten unseren Fuhrpark bekannter machen..."></textarea>
-              </div>
+          <div>
+            <label class="block text-xs font-sans uppercase font-bold tracking-wider text-msh-navy mb-2">Telefonnummer</label>
+            <input type="tel" name="Telefon" placeholder="+49 (0) ..." class="w-full bg-[#f4f7fa] border border-transparent border-b-msh-grey px-4 py-3.5 text-sm text-msh-navy focus:outline-none focus:bg-white focus:border-msh-azure transition-colors">
+          </div>
 
-              <button type="submit" class="w-full py-4 bg-msh-navy text-white font-bold text-xs uppercase tracking-widest hover:bg-msh-azure hover:text-msh-navy transition-colors shadow-sm">
-                Absenden
-              </button>
-            </form>
+          <div class="md:col-span-2">
+            <label class="block text-xs font-sans uppercase font-bold tracking-wider text-msh-navy mb-2">Nachricht</label>
+            <textarea name="Nachricht" rows="4" class="w-full bg-[#f4f7fa] border border-transparent border-b-msh-grey px-4 py-3.5 text-sm text-msh-navy focus:outline-none focus:bg-white focus:border-msh-azure transition-colors resize-y" placeholder="Wir möchten unseren Fuhrpark bekannter machen..."></textarea>
+          </div>
+
+          <div class="md:col-span-2 flex justify-end">
+            <button type="submit" class="w-full md:w-auto px-12 py-4 bg-msh-navy text-white font-bold text-xs uppercase tracking-widest hover:bg-msh-azure hover:text-msh-navy transition-colors flex items-center justify-center gap-3">
+              Absenden
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </form>
           </div>
         </div>
 
       </div>
 
       <!-- Footer -->
-      <div class="mt-24 pt-8 border-t border-msh-navy/20 flex flex-col sm:flex-row justify-between items-center text-xs font-sans text-msh-navy gap-6 w-full">
+      <div class="mt-24 pt-8 border-t border-msh-grey flex flex-col sm:flex-row justify-between items-center text-xs font-sans text-msh-navy gap-6 w-full">
         <div>© 2026 MSH – Media Social Hub GmbH. Neuss, Deutschland.</div>
 
         <div class="flex items-center gap-6">
-          <a href="#" class="hover:text-white transition-colors font-bold">Impressum</a>
-          <a href="#" class="hover:text-white transition-colors font-bold">Datenschutz</a>
+          <a href="#" class="hover:text-msh-azure transition-colors font-bold">Impressum</a>
+          <a href="#" class="hover:text-msh-azure transition-colors font-bold">Datenschutz</a>
         </div>
       </div>
 
