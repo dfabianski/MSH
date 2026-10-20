@@ -97,62 +97,87 @@
   <!-- =================================================================
        HERO STAGE
   ================================================================== -->
-  <section class="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-6 lg:px-16 pt-36 pb-20 bg-cover bg-center bg-no-repeat" style="background-image: url('Design ohne Titel (2).jpg');">
+  <section class="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-6 lg:px-12 pt-32 pb-20 bg-cover bg-center bg-no-repeat" style="background-image: url('Design ohne Titel (2).jpg');">
     
-    <div class="absolute inset-0 bg-[#133252]/50 backdrop-brightness-[0.85] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#133252]/85 via-[#133252]/75 to-[#133252]/90 pointer-events-none"></div>
 
-    <div class="relative z-10 max-w-5xl mx-auto w-full flex flex-col items-center">
+    <div class="relative z-10 max-w-6xl mx-auto w-full flex flex-col items-center">
 
-      <!-- Hero Headline -->
-      <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-bold uppercase tracking-tight leading-snug text-white mb-6 hero-shadow max-w-4xl">
+      <!-- Hero Headline mit harmonischen Sinnabschnitten -->
+      <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold uppercase tracking-tight leading-tight text-white mb-6 hero-shadow max-w-5xl">
         <span class="block">Wie man in Zeiten austauschbarer KI-Inhalte</span>
-        <span class="block text-msh-azure">eine starke, unverwechselbare Marke</span>
+        <span class="block text-msh-azure my-1">eine starke, unverwechselbare Marke</span>
         <span class="block">in der Transport- und Logistikbranche aufbaut</span>
       </h1>
 
-      <!-- Einstiegstext unter der Überschrift -->
-      <p class="text-sm sm:text-base lg:text-lg font-normal text-white/95 max-w-3xl leading-relaxed mb-8 hero-shadow">
-        Mit einer konsistenten Strategie, echter Substanz und Content, der nach Ihnen klingt. Inhalte entstehen heute in Sekunden. Wahrgenommen wird eine Marke deshalb durch etwas anderes: klare Haltung, echtes Fachwissen und eine Sprache, die man wiedererkennt. Wir arbeiten für Unternehmen aus Transport und Logistik und kennen ihre Themen, ihre Sprache und ihre Entscheider. Gute Kommunikation beginnt beim Inhalt. Der Kanal folgt daraus.
-      </p>
+      <!-- Einstiegstext mit Lead-Akzent -->
+      <div class="max-w-4xl mx-auto text-sm sm:text-base lg:text-[17px] text-white/90 leading-relaxed mb-10 hero-shadow">
+        <p class="font-semibold text-white mb-2">
+          Mit einer konsistenten Strategie, echter Substanz und Content, der nach Ihnen klingt.
+        </p>
+        <p class="text-white/85 text-xs sm:text-sm lg:text-base font-normal max-w-3xl mx-auto">
+          Inhalte entstehen heute in Sekunden. Wahrgenommen wird eine Marke deshalb durch etwas anderes: klare Haltung, echtes Fachwissen und eine Sprache, die man wiedererkennt. Wir arbeiten für Unternehmen aus Transport und Logistik und kennen ihre Themen, ihre Sprache und ihre Entscheider. Gute Kommunikation beginnt beim Inhalt. Der Kanal folgt daraus.
+        </p>
+      </div>
 
-      <!-- Drei Zutaten für eine erfolgreiche Marke -->
-      <div class="w-full max-w-3xl mb-8 text-left">
-        <div class="text-xs sm:text-sm font-bold uppercase tracking-widest text-msh-azure mb-3 text-center sm:text-left">
+      <!-- Drei Zutaten für eine erfolgreiche Marke: Übersichtliches 3-Spalten-Grid -->
+      <div class="w-full max-w-5xl mb-8">
+        <div class="text-xs font-bold uppercase tracking-widest text-msh-azure mb-4 text-center">
           Drei Zutaten für eine erfolgreiche Marke
         </div>
-        <div class="space-y-3">
-          <div class="p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded text-white text-sm sm:text-base flex items-start gap-3.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-msh-azure shrink-0 mt-1.5 shadow-[0_0_8px_rgba(96,169,230,0.8)]"></span>
-            <div class="leading-relaxed">
-              <strong class="font-bold text-white uppercase tracking-wide">Strategie:</strong>
-              <span class="text-white/90 font-normal"> Wofür Ihr Unternehmen steht, wen Sie erreichen wollen und mit welchen Botschaften.</span>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+          <!-- 1. Strategie -->
+          <div class="p-5 bg-white/10 backdrop-blur-md border border-white/15 rounded-lg flex flex-col justify-between hover:bg-white/[0.14] transition-all">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2 h-2 rounded-full bg-msh-azure shadow-[0_0_8px_rgba(96,169,230,0.9)]"></span>
+                <span class="text-xs font-bold text-msh-azure uppercase tracking-wider">Strategie</span>
+              </div>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                Wofür Ihr Unternehmen steht, wen Sie erreichen wollen und mit welchen Botschaften.
+              </p>
             </div>
           </div>
-          <div class="p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded text-white text-sm sm:text-base flex items-start gap-3.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-msh-azure shrink-0 mt-1.5 shadow-[0_0_8px_rgba(96,169,230,0.8)]"></span>
-            <div class="leading-relaxed">
-              <strong class="font-bold text-white uppercase tracking-wide">Substanz:</strong>
-              <span class="text-white/90 font-normal"> Ihre Leistungen, Ihr Netzwerk und Ihre Erfahrung, übersetzt in Vorteile für Kunden, Fahrer, Bewerber und Partner.</span>
+
+          <!-- 2. Substanz -->
+          <div class="p-5 bg-white/10 backdrop-blur-md border border-white/15 rounded-lg flex flex-col justify-between hover:bg-white/[0.14] transition-all">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2 h-2 rounded-full bg-msh-azure shadow-[0_0_8px_rgba(96,169,230,0.9)]"></span>
+                <span class="text-xs font-bold text-msh-azure uppercase tracking-wider">Substanz</span>
+              </div>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                Ihre Leistungen, Ihr Netzwerk und Ihre Erfahrung, übersetzt in Vorteile für Kunden, Fahrer, Bewerber und Partner.
+              </p>
             </div>
           </div>
-          <div class="p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded text-white text-sm sm:text-base flex items-start gap-3.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-msh-azure shrink-0 mt-1.5 shadow-[0_0_8px_rgba(96,169,230,0.8)]"></span>
-            <div class="leading-relaxed">
-              <strong class="font-bold text-white uppercase tracking-wide">Authentischer Content:</strong>
-              <span class="text-white/90 font-normal"> Echte Einblicke aus Lager, Fuhrpark und Büro. Für Social Media, Website, Messe, Presse und Vertrieb.</span>
+
+          <!-- 3. Authentischer Content -->
+          <div class="p-5 bg-white/10 backdrop-blur-md border border-white/15 rounded-lg flex flex-col justify-between hover:bg-white/[0.14] transition-all">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2 h-2 rounded-full bg-msh-azure shadow-[0_0_8px_rgba(96,169,230,0.9)]"></span>
+                <span class="text-xs font-bold text-msh-azure uppercase tracking-wider">Authentischer Content</span>
+              </div>
+              <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                Echte Einblicke aus Lager, Fuhrpark und Büro. Für Social Media, Website, Messe, Presse und Vertrieb.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Neuer Inhalt im blauen Kasten -->
-      <div class="p-6 bg-msh-navy/90 backdrop-blur-md border border-msh-azure/40 rounded text-white text-sm sm:text-base leading-relaxed mb-10 max-w-3xl text-center shadow-lg">
-        KI nutzen wir dort, wo sie uns schneller macht. Die Inhalte kommen aus Ihrem Unternehmen, die Erfahrung aus über 20 Jahren Markenarbeit.
-      </div>
+      <!-- Kompakter, eleganter blauer Kasten & CTA -->
+      <div class="w-full max-w-3xl flex flex-col items-center gap-6">
+        <div class="w-full py-4 px-6 bg-[#0e243c]/90 backdrop-blur-md border border-msh-azure/40 rounded-lg text-white text-xs sm:text-sm leading-relaxed text-center shadow-lg">
+          <p class="text-white/95">
+            <strong class="text-msh-azure uppercase tracking-wider">KI nutzen wir dort, wo sie uns schneller macht.</strong><br class="hidden sm:inline">
+            Die Inhalte kommen aus Ihrem Unternehmen, die Erfahrung aus über 20 Jahren Markenarbeit.
+          </p>
+        </div>
 
-      <!-- Hero CTA Button -->
-      <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="#kontakt" class="px-8 py-3.5 bg-msh-azure text-msh-navy font-bold text-xs uppercase tracking-widest hover:bg-white transition-colors flex items-center gap-2 shadow-lg">
+        <a href="#kontakt" class="px-8 py-3.5 bg-msh-azure text-msh-navy font-bold text-xs uppercase tracking-widest hover:bg-white transition-all transform hover:-translate-y-0.5 shadow-xl flex items-center gap-2">
           <span>Lassen Sie uns sprechen</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
