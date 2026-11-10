@@ -246,7 +246,7 @@
         <div class="bg-white border border-msh-grey/70 border-t-2 border-t-msh-navy rounded-lg p-6 shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-msh-navy uppercase tracking-wider">02</span>
+              <span class="text-xs font-bold text-msh-azure uppercase tracking-wider">02</span>
               <span class="w-1.5 h-1.5 rounded-full bg-msh-navy"></span>
             </div>
             <h3 class="text-sm sm:text-base font-bold uppercase tracking-tight text-msh-navy mb-1.5">AUFTRITT</h3>
@@ -518,22 +518,8 @@
           </div>
         </div>
 
-        <!-- Rechte Spalte: Personenkarten (Oliver Haas & Mona Smeets) -->
+        <!-- Rechte Spalte: Personenkarten (Mona Smeets & Oliver Haas) -->
         <div class="lg:col-span-6 flex flex-col gap-5">
-          <!-- Oliver Haas -->
-          <div class="msh-card p-6 border-l-4 border-l-msh-azure flex flex-col sm:flex-row items-center sm:items-start gap-5">
-            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-msh-grey/50 border-2 border-msh-azure flex items-center justify-center shrink-0">
-              <span class="text-xs font-bold text-msh-navy tracking-wider uppercase">Foto</span>
-            </div>
-            <div>
-              <h3 class="text-lg font-bold uppercase text-msh-navy tracking-tight mb-1">Oliver Haas</h3>
-              <div class="text-xs font-bold text-msh-azure uppercase mb-2">Geschäftsführer, Marketingstrategie &amp; Vertrieb</div>
-              <p class="text-xs sm:text-sm font-normal text-msh-navy/80 leading-relaxed">
-                Langjährige Erfahrung in Markenführung und Unternehmensleitung.
-              </p>
-            </div>
-          </div>
-
           <!-- Mona Smeets -->
           <div class="msh-card p-6 border-l-4 border-l-msh-azure flex flex-col sm:flex-row items-center sm:items-start gap-5">
             <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-msh-grey/50 border-2 border-msh-azure flex items-center justify-center shrink-0">
@@ -544,6 +530,20 @@
               <div class="text-xs font-bold text-msh-azure uppercase mb-2">Geschäftsführerin, operative Leitung &amp; Content</div>
               <p class="text-xs sm:text-sm font-normal text-msh-navy/80 leading-relaxed">
                 Content Creatorin mit Erfahrung in Social-Media-Produktion.
+              </p>
+            </div>
+          </div>
+
+          <!-- Oliver Haas -->
+          <div class="msh-card p-6 border-l-4 border-l-msh-azure flex flex-col sm:flex-row items-center sm:items-start gap-5">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-msh-grey/50 border-2 border-msh-azure flex items-center justify-center shrink-0">
+              <span class="text-xs font-bold text-msh-navy tracking-wider uppercase">Foto</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold uppercase text-msh-navy tracking-tight mb-1">Oliver Haas</h3>
+              <div class="text-xs font-bold text-msh-azure uppercase mb-2">Geschäftsführer, Marketingstrategie &amp; Vertrieb</div>
+              <p class="text-xs sm:text-sm font-normal text-msh-navy/80 leading-relaxed">
+                Langjährige Erfahrung in Markenführung und Unternehmensleitung.
               </p>
             </div>
           </div>
@@ -621,11 +621,16 @@
               <!-- Status Feedback Bereich -->
               <div id="form-feedback" class="md:col-span-2 hidden p-4 text-xs sm:text-sm font-bold rounded"></div>
 
-              <div class="md:col-span-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p class="text-[11px] text-msh-navy/70 text-center sm:text-left">
-                  Hinweis: Angaben zur Datenverarbeitung finden Sie in unserer 
-                  <button type="button" onclick="openModal('modal-datenschutz')" class="underline font-bold hover:text-msh-azure">Datenschutzerklärung</button>.
-                </p>
+              <!-- Datenschutz Checkbox -->
+              <div class="md:col-span-2 flex items-start gap-3 pt-1">
+                <input id="privacy-checkbox" type="checkbox" name="Datenschutz" required class="mt-1 h-4 w-4 shrink-0 rounded border-msh-grey text-msh-navy focus:ring-msh-azure cursor-pointer">
+                <label for="privacy-checkbox" class="text-xs text-msh-navy/80 leading-snug cursor-pointer select-none">
+                  Ich willige ein, dass meine Angaben zur Kontaktaufnahme und Bearbeitung meiner Anfrage verarbeitet werden. Weitere Hinweise finden Sie in der 
+                  <button type="button" onclick="openModal('modal-datenschutz')" class="underline font-bold text-msh-navy hover:text-msh-azure">Datenschutzerklärung</button>.
+                </label>
+              </div>
+
+              <div class="md:col-span-2 flex justify-end pt-2">
                 <button id="submit-btn" type="submit" class="w-full sm:w-auto px-10 py-3.5 bg-msh-navy text-white font-bold text-xs uppercase tracking-widest hover:bg-msh-azure hover:text-msh-navy transition-colors flex items-center justify-center gap-3 shrink-0">
                   <span>Absenden</span>
                   <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
